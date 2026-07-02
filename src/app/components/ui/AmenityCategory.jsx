@@ -23,15 +23,13 @@ export default function AmenityCategory({
       whileHover={{
         y: -12,
       }}
-      className=" group relative flex flex-col min-h-[500px] w-full max-w-[420px] mx-auto  rounded-[32px] border border-[#D8B15A]/30 bg-gradient-to-b from-white/[0.06] to-black/80 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,.45)] transition-all duration-500 hover:-translate-y-3 hover:border-[#D8B15A] hover:shadow-[0_35px_80px_rgba(216,177,90,.25)]">
+      className="group relative flex flex-col min-h-[500px] w-full max-w-[420px] mx-auto  rounded-[32px] border border-[#D8B15A]/30 bg-gradient-to-b from-white/[0.06] to-black/80 backdrop-blur-2xl shadow-[0_20px_60px_rgba(0,0,0,.45)] transition-all duration-500 hover:-translate-y-3 hover:border-[#D8B15A] hover:shadow-[0_35px_80px_rgba(216,177,90,.25)]">
       <div className="flex flex-col flex-1 p-8">
 
         <div className="flex justify-center">
 
           <div
-            className="w-20 h-20 rounded-full
-            border border-[#C89B3C]
-            flex items-center justify-center"
+            className="w-20 h-20 rounded-full border border-[#C89B3C] flex items-center justify-center"
           >
             <Icon
               size={36}
@@ -80,6 +78,7 @@ export default function AmenityCategory({
     src={image}
     fill
     alt={title}
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     className="object-cover object-center transition duration-700 group-hover:scale-110"
   />
 

@@ -50,6 +50,10 @@ export default function Navbar() {
               height={45}
               alt="Eastbrook"
               priority
+              style={{
+                  width: "45px",
+                  height: "auto",
+              }}
             />
 
             <div>
