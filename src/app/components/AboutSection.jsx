@@ -35,7 +35,7 @@ export default function AboutSection() {
             <div className="overflow-hidden rounded-3xl">
 
               <Image
-                src="/images/about-villa.jpg"
+                src="/images/about-villa.webp"
                 alt="Luxury Villa"
                 width={700}
                 height={700}

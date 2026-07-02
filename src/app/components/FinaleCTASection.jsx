@@ -13,7 +13,7 @@ export default function FinalCTASection() {
     >
       {/* Background Image */}
       <Image
-        src="/images/final-Cta-bg.png"
+        src="/images/final-Cta-bg.webp"
         alt="Luxury Villa"
         fill
         className="object-cover"

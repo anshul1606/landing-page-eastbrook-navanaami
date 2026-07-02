@@ -87,7 +87,7 @@ export default function LocationSection() {
           >
 
             <Image
-              src="/images/location-map.jpg"
+              src="/images/location-map.webp"
               alt="Location Map"
               width={700}
               height={600}

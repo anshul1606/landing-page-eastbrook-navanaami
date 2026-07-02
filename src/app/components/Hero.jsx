@@ -13,7 +13,7 @@ export default function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/images/hero-image.jpg"
+        src="/images/hero-image.webp"
         alt="Eastbrook Villas"
         fill
         priority

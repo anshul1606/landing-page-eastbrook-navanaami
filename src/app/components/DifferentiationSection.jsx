@@ -40,7 +40,7 @@ export default function DifferentiationSection() {
           >
             <div className="relative overflow-hidden rounded-3xl">
               <Image
-                src="/images/independent-villa.png"
+                src="/images/independent-villa.webp"
                 alt="Independent Villa"
                 width={700}
                 height={700}

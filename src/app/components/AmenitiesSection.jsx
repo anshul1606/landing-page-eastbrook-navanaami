@@ -10,7 +10,7 @@ const amenities = [
   {
     title: "Clubhouse",
     icon: Building2,
-    image: "/images/gym.png",
+    image: "/images/gym.webp",
     items: [
       "Gym",
       "Indoor Games",
@@ -20,7 +20,7 @@ const amenities = [
   {
     title: "Lifestyle",
     icon: Trees,
-    image: "/images/gazebo.jpg",
+    image: "/images/gazebo.webp",
     items: [
       "Senior Citizen Park",
       "Grocery Store",
@@ -32,7 +32,7 @@ const amenities = [
   {
     title: "Sports",
     icon: Trophy,
-    image: "/images/sports.jpg",
+    image: "/images/sports.webp",
     items: [
       "Cricket Pitch",
       "Pickleball Court",
@@ -51,7 +51,7 @@ export default function AmenitiesSection() {
     <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-            backgroundImage: "url('/images/amenity-bg.png')",
+            backgroundImage: "url('/images/amenity-bg.webp')",
         }}
     />
 

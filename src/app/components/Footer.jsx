@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
 
               <Image
-                src="/images/nav-logo.png"
+                src="/images/nav-logo.webp"
                 width={55}
                 height={55}
                 alt="Eastbrook"

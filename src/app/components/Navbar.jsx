@@ -45,7 +45,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3">
 
             <Image
-              src="/images/nav-logo.png"
+              src="/images/nav-logo.webp"
               width={45}
               height={45}
               alt="Eastbrook"
