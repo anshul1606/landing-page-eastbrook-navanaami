@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Container from "./Container";
 import AnimatedText from "./AnimatedText";
+import LeadFormModal from "./LeadFormModal";
 
 const links = [
   { title: "Home", href: "#home" },
@@ -20,6 +21,7 @@ const links = [
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const scroll = () => {
@@ -86,7 +88,7 @@ export default function Navbar() {
 
           </nav>
 
-          <button className="hidden lg:block bg-[#C89B3C] text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
+          <button onClick={() => setShowPopup(true)} className="hidden lg:block bg-[#C89B3C] text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
             Book a Visit
           </button>
 
@@ -126,7 +128,8 @@ export default function Navbar() {
 
               ))}
 
-              <button className="mt-6 bg-[#C89B3C] text-black py-3 rounded-full font-semibold">
+              <button onClick={() => {setShowPopup(true); setMenuOpen(false);}} 
+              className="mt-6 bg-[#C89B3C] text-black py-3 rounded-full font-semibold">
                 Book a Visit
               </button>
 
@@ -137,7 +140,9 @@ export default function Navbar() {
         )}
 
       </AnimatePresence>
-
+      <LeadFormModal
+      open={showPopup}
+      onClose={() => setShowPopup(false)}/>
     </header>
   );
 }

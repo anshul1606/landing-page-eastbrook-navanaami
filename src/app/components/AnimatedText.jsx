@@ -14,7 +14,7 @@ export default function AnimatedText({ text }) {
       each:0.025,
       from:"start"
     },
-    duration: 0.7,
+    duration: 1.0,
     ease: "power4.out",
     });
   };
@@ -26,7 +26,7 @@ export default function AnimatedText({ text }) {
         each: 0.025,
         from:"end"
       },
-      duration: 0.7,
+      duration: 1.0,
       ease: "power3.out",
     });
   };
