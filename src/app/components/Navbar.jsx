@@ -28,7 +28,7 @@ export default function Navbar() {
       setIsScrolled(window.scrollY > 40);
     };
 
-    window.addEventListener("scroll", scroll);
+    window.addEventListener("scroll", scroll, { passive: true });
     return () => window.removeEventListener("scroll", scroll);
   }, []);
 
@@ -36,7 +36,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         isScrolled || menuOpen // Force solid background if menu is open
-          ? "bg-[#08111F]/95 backdrop-blur-xl shadow-lg"
+          ? "bg-[#08111F]/95 backdrop-blur-md lg:backdrop-blur-xl  shadow-lg"
           : "bg-transparent"
       }`}
     >
