@@ -68,7 +68,7 @@ export default function ConfigurationSection() {
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: index * 0.2 }}
               whileHover={{ y: -8 }}
               className="rounded-2xl md:rounded-3xl border border-white/10 bg-[#101828] p-6 md:p-8 hover:border-[#C89B3C] transition"

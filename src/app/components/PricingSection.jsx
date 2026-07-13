@@ -81,7 +81,7 @@ export default function PricingSection() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             {/* Reduced padding and radius on smaller screens to maximize form space */}
             <div className="rounded-[24px] md:rounded-[34px] border border-[#D8B15A]/30 bg-[#101828] p-6 sm:p-8 md:p-10 shadow-[0_20px_60px_rgba(0,0,0,.45)]">

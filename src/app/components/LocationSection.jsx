@@ -72,7 +72,7 @@ export default function LocationSection() {
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: .7 }}
             // Syncing border radius with the left card
             className="relative overflow-hidden rounded-2xl md:rounded-3xl"
