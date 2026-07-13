@@ -45,27 +45,26 @@ export default function AmenitiesSection() {
   return (
     <section
       id="amenities"
-      className="relative py-15 md:py-20 overflow-hidden"
+      className="relative py-12 md:py-20 overflow-hidden"
     >
       {/* Background Image */}
-    <div
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-            backgroundImage: "url('/images/amenity-bg.webp')",
+          backgroundImage: "url('/images/amenity-bg.webp')",
         }}
-    />
+      />
 
       {/* Dark Overlay */}
-
       <div className="absolute inset-0 bg-black/50"></div>
+      
+      {/* First Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/55 to-[#08111F]"/>
 
-      {/* Gold Gradient */}
-
+      {/* Second Gradient / Gold Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-[#08111F]"></div>
 
       <Container className="relative z-10">
-
         <SectionHeading
           subtitle="AMENITIES"
           title="Everything You Need,"
@@ -73,8 +72,8 @@ export default function AmenitiesSection() {
           description="A world of comfort, recreation and convenience designed for modern luxury living."
         />
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
-
+        {/* Responsive margin-top and grid gaps */}
+        <div className="mt-10 md:mt-16 grid gap-6 md:gap-8 lg:grid-cols-3">
           {amenities.map((item, index) => (
             <AmenityCategory
               key={index}
@@ -82,9 +81,7 @@ export default function AmenitiesSection() {
               delay={index * .2}
             />
           ))}
-
         </div>
-
       </Container>
     </section>
   );

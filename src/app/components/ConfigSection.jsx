@@ -51,8 +51,7 @@ const layout = [
 
 export default function ConfigurationSection() {
   return (
-    <section className="bg-[#08111F] py-15 md:py-20">
-
+    <section className="bg-[#08111F] py-12 md:py-20">
       <Container>
 
         <SectionHeading
@@ -63,9 +62,7 @@ export default function ConfigurationSection() {
         />
 
         {/* CONFIGURATIONS */}
-
-        <div className="mt-16 grid gap-8 lg:grid-cols-2">
-
+        <div className="mt-8 md:mt-10 grid gap-6 md:gap-8 lg:grid-cols-2">
           {villas.map((villa, index) => (
             <motion.div
               key={index}
@@ -74,65 +71,43 @@ export default function ConfigurationSection() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
               whileHover={{ y: -8 }}
-              className="rounded-3xl border border-white/10 bg-[#101828] p-8 hover:border-[#C89B3C] transition"
+              className="rounded-2xl md:rounded-3xl border border-white/10 bg-[#101828] p-6 md:p-8 hover:border-[#C89B3C] transition"
             >
-
               <div className="flex items-center gap-4">
-
-                <div className="h-16 w-16 rounded-2xl bg-[#C89B3C]/15 flex items-center justify-center">
-
-                  <Home className="text-[#C89B3C]" />
-
+                <div className="h-12 w-12 md:h-16 md:w-16 rounded-xl md:rounded-2xl bg-[#C89B3C]/15 flex items-center justify-center flex-shrink-0">
+                  <Home className="text-[#C89B3C] w-5 h-5 md:w-6 md:h-6" />
                 </div>
-
                 <div>
-
-                  <h3 className="text-2xl font-bold">
+                  <h3 className="text-xl md:text-2xl font-bold">
                     {villa.plot}
                   </h3>
-
-                  <p className="text-gray-400 mt-1">
+                  <p className="text-sm md:text-base text-gray-400 mt-1">
                     {villa.built}
                   </p>
-
                 </div>
-
               </div>
 
-              <button className="mt-8 flex items-center gap-2 text-[#C89B3C] font-semibold hover:gap-4 transition-all">
-
+              <button className="mt-6 md:mt-8 flex items-center gap-2 text-[#C89B3C] text-sm md:text-base font-semibold hover:gap-4 transition-all">
                 View Floor Plan
-
-                <ArrowRight size={18} />
-
+                <ArrowRight size={18} className="md:w-[20px] md:h-[20px]" />
               </button>
-
             </motion.div>
           ))}
-
         </div>
 
         {/* LAYOUT BREAKDOWN */}
-
-        <div className="mt-20 text-center">
-
-          <h2 className="text-4xl font-bold">
-
+        <div className="mt-14 md:mt-20 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold">
             Layout
             <span className="text-[#C89B3C]"> Breakdown</span>
-
           </h2>
-
-          <p className="text-gray-400 mt-4">
+          <p className="text-sm md:text-base text-gray-400 mt-3 md:mt-4">
             Every floor is thoughtfully planned for comfort and functionality.
           </p>
-
         </div>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-3">
-
+        <div className="mt-8 md:mt-12 lg:mt-16 grid gap-6 md:gap-8 lg:grid-cols-3">
           {layout.map((floor, index) => (
-
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
@@ -140,51 +115,36 @@ export default function ConfigurationSection() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
               whileHover={{ y: -8 }}
-              className="rounded-3xl bg-[#101828] border border-white/10 p-8 hover:border-[#C89B3C] transition"
+              className="rounded-2xl md:rounded-3xl bg-[#101828] border border-white/10 p-6 md:p-8 hover:border-[#C89B3C] transition"
             >
-
               <div className="flex items-center gap-3">
-
-                <BedDouble className="text-[#C89B3C]" />
-
-                <h3 className="text-2xl font-bold">
+                <BedDouble className="text-[#C89B3C] w-5 h-5 md:w-6 md:h-6 flex-shrink-0" />
+                <h3 className="text-xl md:text-2xl font-bold">
                   {floor.floor}
                 </h3>
-
               </div>
 
-              <div className="mt-8 space-y-5">
-
+              <div className="mt-6 md:mt-8 space-y-4 md:space-y-5">
                 {floor.points.map((item) => (
-
                   <div
                     key={item}
-                    className="flex items-center gap-3"
+                    className="flex items-start gap-3"
                   >
-
                     <CheckCircle2
                       size={18}
-                      className="text-[#C89B3C]"
+                      className="text-[#C89B3C] mt-[2px] md:mt-1 flex-shrink-0"
                     />
-
-                    <span className="text-gray-300">
+                    <span className="text-sm md:text-base text-gray-300">
                       {item}
                     </span>
-
                   </div>
-
                 ))}
-
               </div>
-
             </motion.div>
-
           ))}
-
         </div>
 
       </Container>
-
     </section>
   );
 }
