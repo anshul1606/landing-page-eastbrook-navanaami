@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ScrollProgress from "./components/ScrollProgress";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ValueSection from "./components/ValueSection";
@@ -15,6 +16,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
+    <ScrollProgress />
     <main className="w-full overflow-x-hidden">
       <Navbar />
       <Hero />

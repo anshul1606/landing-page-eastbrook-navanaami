@@ -37,8 +37,7 @@ export default function LeadForm({isOpen = true,
 
         setName("");
         setPhone("");
-        setEmail("");
-      
+        setEmail(""); 
     }
      catch (error) {
       console.error(error);
@@ -48,7 +47,7 @@ export default function LeadForm({isOpen = true,
       setLoading(false);
     }
   };
-  
+   
   return (
     <div className="w-full max-w-md rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 p-8">
 

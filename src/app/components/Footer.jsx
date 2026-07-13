@@ -197,7 +197,7 @@ export default function Footer() {
             All Rights Reserved.
           </p>
 
-          <div className="flex gap-5">
+          {/* <div className="flex gap-5">
 
             <a
               href="#"
@@ -218,9 +218,9 @@ export default function Footer() {
               className="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#D8B15A] hover:text-black transition"
             >
               <FaLinkedinIn size={18} />
-            </a>
+            </a> 
 
-          </div>
+          </div>*/}
 
         </div>
 
